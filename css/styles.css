@@ -12,12 +12,25 @@
   --bg-first-color: #ffffff;
   --bg-second-color: #2f303a;
   --bg-third-color: #f5f4fa;
+  --botder-first-color: #ececec;
+  --border-second-color: #eeeeee;
+  --section-padding: 94px;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-first-color);
   color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
 }
 .container {
   width: 1200px;
@@ -52,6 +65,16 @@ body {
 .text {
   color: var(--primary-text-color);
 }
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
 /* Logo */
 .logo {
   font-family: 'Raleway';
@@ -67,13 +90,26 @@ body {
 .logo-footer {
   color: var(--logo-second-color);
 }
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
-}
+
 /* Header */
+.header {
+  border-bottom: 1px solid var(--botder-first-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,7 +123,17 @@ body {
 .nav-link:focus {
   color: var(--accent-color);
 }
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,6 +147,12 @@ body {
 /* Hero */
 .hero {
   background-color: var(--bg-second-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-container {
+  padding-right: 252px;
+  padding-left: 252px;
 }
 .hero-title {
   font-weight: 900;
@@ -110,19 +162,35 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-heading-color);
+  margin-bottom: 40px;
 }
 .hero-button {
+  display: block;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   font-weight: 700;
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* Preferences */
+.preferences-list {
+  display: flex;
+}
+.preferences-item {
+  flex-basis: calc((100% - 90px) / 3);
+}
+.preferences-item:not(:last-child) {
+  margin-right: 30px;
+}
 .preferences-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .preferences-text {
   font-size: 14px;
@@ -132,12 +200,26 @@ body {
 /* Occupation */
 .occupation {
   background-color: var(--bg-first-color);
+  padding-top: 0;
+}
+.occupation-list {
+  display: flex;
 }
 .occupation-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.occupation-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+.occupation-img {
+  display: block;
 }
 /* Team */
 .team {
@@ -148,22 +230,51 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-card {
+  background-color: var(--bg-first-color);
+  padding-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.team-img {
+  display: block;
+  margin-bottom: 30px;
 }
 .team-subtitle {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .team-text {
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /* Footer */
 .footer {
   background-color: var(--bg-second-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .address {
   font-style: normal;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
   font-size: 14px;
