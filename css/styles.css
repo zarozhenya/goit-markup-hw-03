@@ -19,6 +19,11 @@ body {
   background-color: var(--bg-first-color);
   color: var(--primary-text-color);
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
 }
