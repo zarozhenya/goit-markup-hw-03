@@ -310,10 +310,33 @@ ul {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.example-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.example-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.example-img {
+  display: block;
+}
+.example-description {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-second-color);
+  border-bottom: 1px solid var(--border-second-color);
+  border-left: 1px solid var(--border-second-color);
+}
 .example-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .example-text {
   line-height: 1.88;
