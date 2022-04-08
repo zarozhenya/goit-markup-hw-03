@@ -170,8 +170,8 @@ ul {
   color: var(--secondary-text-color);
   font-weight: 700;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
+  line-height: 1.88;
+  padding: 10px 32px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -290,11 +290,21 @@ ul {
   color: var(--accent-color);
 }
 /* Portfolio */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-button {
   font-weight: 500;
   color: var(--nav-text-color);
   background-color: var(--bg-third-color);
   letter-spacing: 0.03em;
+  line-height: 1.62;
+  padding: 6px 22px;
 }
 .filter-button:hover {
   background-color: var(--accent-color);
