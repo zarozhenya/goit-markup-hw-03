@@ -69,6 +69,7 @@ ul {
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
 }
 .section {
@@ -83,6 +84,9 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.header .logo {
+  margin-right: 93px;
 }
 .logo-header {
   color: var(--logo-first-color);
@@ -101,7 +105,6 @@ ul {
 }
 .nav-list {
   display: flex;
-  margin-left: 93px;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -150,10 +153,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero-container {
-  padding-right: 252px;
-  padding-left: 252px;
-}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -162,7 +162,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-heading-color);
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 40px;
+  width: 696px;
 }
 .hero-button {
   display: block;
@@ -237,7 +240,6 @@ ul {
 }
 .team-card {
   background-color: var(--bg-first-color);
-  padding-bottom: 30px;
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -246,7 +248,10 @@ ul {
 }
 .team-img {
   display: block;
-  margin-bottom: 30px;
+}
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-subtitle {
   font-size: 16px;
